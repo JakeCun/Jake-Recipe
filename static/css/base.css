@@ -103,7 +103,7 @@ img.logo {
     cursor: pointer;
 }
 
-.recipe-info{
+.recipe-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
