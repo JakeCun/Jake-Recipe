@@ -43,13 +43,16 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-
-    # APPS
-    'home',
-
-    # Other
+    
+     # Other
     'crispy_forms',
     'crispy_bootstrap5',
+   
+    # APPS
+    'home',
+    'recipes',
+
+   
 ]
 SITE_ID = 1
 
@@ -159,10 +162,11 @@ LOGIN_REDIRECT_URL = '/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
