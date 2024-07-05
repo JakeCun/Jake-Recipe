@@ -1,1 +1,1 @@
-web: gunicorn <jake-recipe>.wsgi --log-file -
+web: gunicorn main.wsgi
