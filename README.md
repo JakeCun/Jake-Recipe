@@ -18,6 +18,52 @@
 5. In the Deploy tab, enable automatic deploys from your GitHub repository.
 6. Click the "Deploy Branch" button to deploy the app.
 7. Once the app has been deployed, click the "Open App" button to view the app.
+
+### User Testing
+
+User testing ensures that key user-facing features, such as authentication, profile management, and form submissions, work as expected. The following outlines the key areas to test and how to approach them:
+
+#### 1. User Authentication
+
+Test the following user actions to verify the authentication flow:
+
+- **User Registration:**  
+  Ensure that users can successfully register by submitting the registration form with valid credentials. After registration, users should be redirected to the appropriate page, and the new account should be created in the database.
+
+- **User Login:**  
+  Verify that users can log in using valid credentials. Upon successful login, users should be redirected to their dashboard or homepage, and their session should indicate they are authenticated.
+
+- **User Logout:**  
+  Test that users can log out successfully and are redirected to the appropriate page. After logging out, they should no longer have access to any authenticated areas.
+
+#### 2. User Profiles and Dashboard
+
+Test the ability for users to view and manage their profiles:
+
+- **Profile Page Access:**  
+  Confirm that authenticated users can access their profile page. The profile page should display user-specific information, and unauthorized users should not be able to access it.
+
+- **Dashboard Access:**  
+  Ensure that logged-in users can access their dashboard. Non-authenticated users should be redirected to the login page when attempting to access restricted areas like the dashboard.
+
+#### 3. Form Submissions
+
+Test forms to ensure users can successfully submit data:
+
+- **Posting Comments or Creating Items:**  
+  Verify that users can submit forms such as posting comments or creating content (e.g., blog posts, tasks). After submission, users should be redirected or shown a success message, and the new data should be stored and displayed correctly.
+
+#### 4. Permissions and Access Control
+
+Test that access to certain areas is restricted appropriately:
+
+- **Authenticated-only Views:**  
+  Ensure that pages like user dashboards, profile management, and other restricted content are only accessible to logged-in users. Non-authenticated users should be redirected to the login page if they attempt to access these pages.
+
+- **Form Access:**  
+  Confirm that only users with the correct permissions can access and submit certain forms, like admin or moderator-level actions.
+
+
 ## Credit
 
 All credit goes to Dee MC and her follow along 'https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1&ab_channel=DeeMc'
